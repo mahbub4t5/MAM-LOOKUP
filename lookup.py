@@ -836,7 +836,7 @@ def btn(text, cb, style=None):
 def user_reply_kb():
     kb = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=False)
 
-    # Row 1 (Both Green)
+    # Row 1 (Both Green, Select User RIGHT)
     if KeyboardButtonRequestUsers:
         try:
             request = KeyboardButtonRequestUsers(
@@ -848,18 +848,18 @@ def user_reply_kb():
                 request_photo=False
             )
             kb.row(
-                KeyboardButton("👤 Select User", request_users=request, style="success"),
-                KeyboardButton("🔍 Lookup by ID", style="success")
+                KeyboardButton("🔍 Lookup by ID", style="success"),
+                KeyboardButton("👤 Select User", request_users=request, style="success")
             )
         except TypeError:
             kb.row(
-                KeyboardButton("👤 Select User", style="success"),
-                KeyboardButton("🔍 Lookup by ID", style="success")
+                KeyboardButton("🔍 Lookup by ID", style="success"),
+                KeyboardButton("👤 Select User", style="success")
             )
     else:
         kb.row(
-            KeyboardButton("👤 Select User", style="success"),
-            KeyboardButton("🔍 Lookup by ID", style="success")
+            KeyboardButton("🔍 Lookup by ID", style="success"),
+            KeyboardButton("👤 Select User", style="success")
         )
 
     # Row 2 (Profile red, Daily blue)
