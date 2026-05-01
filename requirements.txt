@@ -1,2 +1,4 @@
-pyTelegramBotAPI>=4.16.0
+pyTelegramBotAPI
 requests
+Flask
+urllib3
