@@ -38,7 +38,7 @@ DEFAULT_LOG_CHAT_ID = int(os.environ.get("LOG_CHAT_ID", BACKUP_CHAT_ID))
 API_TIMEOUT = int(os.environ.get("API_TIMEOUT", "30"))
 SELF_URL = os.environ.get("SELF_URL", "").strip()
 
-BOT_NAME = "📞 MAM L⚆⚆KUP"
+BOT_NAME = "𓆩˚ᗰꫝꪑ •ᏝʘʘƙᏬթ ˚𓆪🔎"
 
 os.makedirs(os.path.dirname(os.path.abspath(DB_PATH)), exist_ok=True)
 
